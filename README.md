@@ -143,7 +143,7 @@ init_bench
 
 ### 查看测试结果 
 
-* 所有基准测试完成后，您可以通过 SSH 会话找到结果
+* 所有基准测试完成后，您可以通过 WebUI 查看结果
 
 <picture>
  <img alt="YOUR-ALT-TEXT" src="assets/result.png">
