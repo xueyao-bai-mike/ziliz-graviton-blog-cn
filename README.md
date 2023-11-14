@@ -154,7 +154,7 @@ init_bench
 经过以上针对 m6i (Intel) m7g(Graviton3) 的测试，我们得到最终结果如下：
 
 <picture>
- <img alt="YOUR-ALT-TEXT" src="assets/compare_2.png">
+ <img alt="YOUR-ALT-TEXT" src="assets/compare.png">
 </picture>
 
 ## 总结
