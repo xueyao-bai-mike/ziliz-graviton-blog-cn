@@ -1,7 +1,7 @@
 # 开源向量数据库Milvus借助亚马逊云科技Graviton3实例，实现实例性价比高达31%的提升
 
 <picture>
- <img alt="YOUR-ALT-TEXT" src="assets/zilliz-brand.png">
+ <img alt="YOUR-ALT-TEXT" src="assets/milvus_brand.png">
 </picture>
 
 <sub> _亚马逊云科技博客 白雪尧 & 袁泉 & 吴万涛_ <sub>
@@ -16,7 +16,7 @@
 
 Embedding 技术和向量数据库可以被广泛应用于各类 AI 驱动的应用场景，包括图片检索、视频分析、自然语言理解、推荐系统、定向广告、个性化搜索、智能客服和欺诈检测等。
 
-在众多的向量数据库中，Milvus 是全球最流行的开源向量数据库之一，截止本文创作时至，在 Github 有超过 2.3 万颗 Star。且看 Milvus 的官方介绍：
+在众多的向量数据库中，Milvus 是全球最流行的开源向量数据库之一，截止本文创作时至，在 Github 有超过 2.6 万颗 Star。且看 Milvus 的官方介绍：
 
 > Milvus 是一个高度灵活、可靠且速度极快的云原生开源向量数据库。它为 embedding 相似性搜索和 AI 应用程序提供支持，并努力使每个组织都可以访问向量数据库。 Milvus 可以存储、索引和管理由深度神经网络和其他机器学习（ML）模型生成的十亿级别以上的 embedding 向量。
 
