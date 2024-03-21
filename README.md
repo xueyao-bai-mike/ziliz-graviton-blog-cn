@@ -12,7 +12,7 @@
 
 在生成式 AI 和深度学习领域通常的做法是通过将非结构化数据转换为向量进行存储，并通过向量相似性搜索（Vector similarity search）技术进行语义相关性搜索。而快速地存储、索引和搜索 Embedding 向量，正是向量数据库的核心功能。
 
-当前市面上主流的向量数据库可以分为两大类，一类是在既有数据库产品上进行扩展，例如 Amazon OpenSearch 服务通过 KNN 插件、Amazon RDS for PostgreSQL 通过 pgvector 扩展实现对向量的支持。另一类是独立的向量数据库产品，比较知名的有 Milvus、Zilliz Cloud（powered by Milvus）、Pinecone、Weaviate、Qdrant、Chroma 等。在这类向量数据库中，向量是一等公民，所有的功能都是围绕着它建立的。
+当前市面上主流的向量数据库可以分为两大类，一类是在既有数据库产品上进行扩展，例如 Amazon OpenSearch 服务通过 KNN 插件、Amazon RDS for PostgreSQL 通过 pgvector 扩展实现对向量的支持。另一类是独立的向量数据库产品，比较知名的有 Milvus、Pinecone、Weaviate、Qdrant、Chroma 等。在这类向量数据库中，向量是一等公民，所有的功能都是围绕着它建立的。
 
 Embedding 技术和向量数据库可以被广泛应用于各类 AI 驱动的应用场景，包括图片检索、视频分析、自然语言理解、推荐系统、定向广告、个性化搜索、智能客服和欺诈检测等。
 
@@ -24,7 +24,7 @@ Embedding 技术和向量数据库可以被广泛应用于各类 AI 驱动的应
 
 Amazon Graviton 处理器由 Aamazon 设计，旨在为 Amazon EC2 中运行的云工作负载提供最佳性价比。
 
-Amazon Graviton3 处理器是 Amazon Graviton 处理器系列中的最新产品。与 Amazon Graviton2 处理器相比，它们的计算性能提高了 25%，浮点性能提高了 2 倍，加密工作负载性能提高了 2 倍。与 Amazon Graviton2 处理器相比，Amazon Graviton3 处理器在机器学习工作负载方面的性能提高了 3 倍，包括对 bfloat16 的支持。它们还支持 DDR5 内存，与 DDR4 相比，内存带宽增加了 50%。与 Amazon Graviton3 处理器相比，Amazon Graviton3E 处理器的矢量指令性能提高了 35%。这一改进为 HPC 应用程序提供了更高的性能优势。
+Amazon Graviton3 处理器是 Amazon Graviton 处理器系列中已经GA的最新产品(Graviton4 已经在Preview阶段)。与 Amazon Graviton2 处理器相比，它们的计算性能提高了 25%，浮点性能提高了 2 倍，加密工作负载性能提高了 2 倍。与 Amazon Graviton2 处理器相比，Amazon Graviton3 处理器在机器学习工作负载方面的性能提高了 3 倍，包括对 bfloat16 的支持。它们还支持 DDR5 内存，与 DDR4 相比，内存带宽增加了 50%。与 Amazon Graviton3 处理器相比，Amazon Graviton3E 处理器的矢量指令性能提高了 35%。这一改进为 HPC 应用程序提供了更高的性能优势。
 
 ## 基准测试概述和测试目标
 
