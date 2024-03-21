@@ -1,4 +1,4 @@
-# 开源向量数据库Milvus借助亚马逊云科技Graviton3实例，实现实例性价比高达31%的提升
+# Milvus在亚马逊云科技Graviton3提升实例性价比高达31%
 
 <picture>
  <img alt="YOUR-ALT-TEXT" src="assets/milvus_brand.png">
@@ -32,7 +32,7 @@ Amazon Graviton3 处理器是 Amazon Graviton 处理器系列中已经GA的最�
 具体详情如下表所示：
 
 <picture>
- <img alt="YOUR-ALT-TEXT" src="assets/ec2-type.png">
+ <img alt="YOUR-ALT-TEXT" src="assets/ec2_type.png">
 </picture>
 
 <sub> _Graviton3 (m7g) VS Intel Xeon Platinum 8375C (m6i)_ <sub>
