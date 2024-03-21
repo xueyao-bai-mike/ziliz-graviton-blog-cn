@@ -1,10 +1,10 @@
-# Zilliz借助亚马逊云科技Graviton3实例，实现实例性价比高达41%的提升
+# 开源向量数据库Milvus借助亚马逊云科技Graviton3实例，实现实例性价比高达31%的提升
 
 <picture>
  <img alt="YOUR-ALT-TEXT" src="assets/zilliz-brand.png">
 </picture>
 
-<sub> _亚马逊云科技&Zilliz联合博客 白雪尧 & 袁泉 & 吴万涛 @亚马逊云科技, 马宇生@Zilliz_ <sub>
+<sub> _亚马逊云科技博客 白雪尧 & 袁泉 & 吴万涛_ <sub>
 
 生成式 AI（Generative AI）的火爆引发了广泛的关注，也彻底点燃了向量数据库（Vector Database）市场，众多的向量数据库产品开始真正出圈，走进大众的视野。
 
@@ -20,10 +20,6 @@ Embedding 技术和向量数据库可以被广泛应用于各类 AI 驱动的应
 
 > Milvus 是一个高度灵活、可靠且速度极快的云原生开源向量数据库。它为 embedding 相似性搜索和 AI 应用程序提供支持，并努力使每个组织都可以访问向量数据库。 Milvus 可以存储、索引和管理由深度神经网络和其他机器学习（ML）模型生成的十亿级别以上的 embedding 向量。
 
-## 关于 Zilliz
-
-Zilliz 是向量数据库系统的开拓者和全球领先者，是全球最受欢迎的开源向量数据库 Milvus 的创造者。Zilliz 以 AI 民主化为使命，面向企业级 AI 应用，研发精简 AI 数据管理基础设施。其中，Milvus已被全球超过 1000 家企业用户所信赖，下载和安装超过 600 万次。基于 Milvus 的云原生全托管云服务Zilliz Cloud 已在全球上线，覆盖AWS以及其他主流公有云。
-
 ## 关于 Amazon Graviton
 
 AWS Graviton 处理器由 AWS 设计，旨在为 Amazon EC2 中运行的云工作负载提供最佳性价比。
@@ -32,7 +28,7 @@ AWS Graviton3 处理器是 AWS Graviton 处理器系列中的最新产品。与 
 
 ## 基准测试概述和测试目标
 
-为了更好地了解 Graviton3 能够给Zilliz提供的性能优劣情况，我们将针对 Intel Xeon Platinum 8375C 进行负载测试。
+为了更好地了解 Graviton3 能够给用户自建Milvus提供的性能优劣情况，我们将针对 Intel Xeon Platinum 8375C 进行负载测试。
 具体详情如下表所示：
 
 <picture>
@@ -45,7 +41,7 @@ AWS Graviton3 处理器是 AWS Graviton 处理器系列中的最新产品。与 
     * EBS：GP3, 80G(保持默认性能选项, Throughput 125MB/s, IOPS 3000)
 
 
-### Zilliz 基准测试工具 & 数据集介绍
+### 基准测试工具 & 数据集介绍
 
 我们将使用VectorDBBench来进行测试。 VectorDBBench 是进行最终性能和成本效益比较的首选工具。 VectorDBBench 的设计考虑到了易用性，旨在帮助用户（甚至是非专业人士）重现结果或测试新系统，从而轻松地在众多云服务和开源矢量数据库中寻找最佳选择。
 
@@ -60,8 +56,6 @@ AWS Graviton3 处理器是 AWS Graviton 处理器系列中的最新产品。与 
 * **efSearch**: 该参数在搜索阶段使用，并在搜索最近邻居时控制动态列表的大小。较大的 efSearch 值可能会导致更详尽的搜索，但也会增加查询时间。
 
 在我们的测试中，我们为 ARM64 和 X86 平台选择相同的参数。
-
-我们在 x86 平台上实现了 AVX512、AVX2 和 SSE4 SIMD 内在优化，以加速向量距离计算。在 ARM 平台上，我们实现了 NEON 和 SVE SIMD 内在优化。在此基准测试中，我们将比较 Milvus 和 ZillizCloud 在 x86 平台和最新 ARM 平台上的性能。
 
 ### 安装Milvus 
 
@@ -159,9 +153,8 @@ init_bench
 
 ## 总结
 
-我们的测试表明，Zilliz Cloud on Graviton3 (m7g) 的总体性能比 Intel Xeon Platinum 8375C (m6i) 实现了更好的 QPS (21.85%)。
-与 Intel m6i 实例相比，Graviton3(m7g) 上的 Milvus 2.3.2 的 QPS 也提高了 13.65%。
-考虑到价格，我们的结果显示，与 m6i 系列实例上的 x86 处理器相比，Graviton3 可以带来高达 41% 的性价比提升。
+我们的测试表明，Milvus on Graviton3 (m7g) 的总体性能比 Intel Xeon Platinum 8375C (m6i) 实现了更好的 QPS (13.7%)。
+考虑到价格(m6i相较m7g单价约贵17.6%)，我们的结果显示，与 m6i 系列实例上的 x86 处理器相比，Graviton3 可以带来高达 31% 的性价比提升。
 
 我们鼓励读者尽可能尝试 Graviton3，感受 Graviton3 带来的性价比提升。
 
