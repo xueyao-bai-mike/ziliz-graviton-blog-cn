@@ -22,9 +22,9 @@ Embedding 技术和向量数据库可以被广泛应用于各类 AI 驱动的应
 
 ## 关于 Amazon Graviton
 
-AWS Graviton 处理器由 AWS 设计，旨在为 Amazon EC2 中运行的云工作负载提供最佳性价比。
+Amazon Graviton 处理器由 Aamazon 设计，旨在为 Amazon EC2 中运行的云工作负载提供最佳性价比。
 
-AWS Graviton3 处理器是 AWS Graviton 处理器系列中的最新产品。与 AWS Graviton2 处理器相比，它们的计算性能提高了 25%，浮点性能提高了 2 倍，加密工作负载性能提高了 2 倍。与 AWS Graviton2 处理器相比，AWS Graviton3 处理器在 ML 工作负载方面的性能提高了 3 倍，包括对 bfloat16 的支持。它们还支持 DDR5 内存，与 DDR4 相比，内存带宽增加了 50%。与 AWS Graviton3 处理器相比，AWS Graviton3E 处理器的矢量指令性能提高了 35%。这一改进为 HPC 应用程序提供了更高的性能优势。
+Amazon Graviton3 处理器是 Amazon Graviton 处理器系列中的最新产品。与 Amazon Graviton2 处理器相比，它们的计算性能提高了 25%，浮点性能提高了 2 倍，加密工作负载性能提高了 2 倍。与 Amazon Graviton2 处理器相比，Amazon Graviton3 处理器在机器学习工作负载方面的性能提高了 3 倍，包括对 bfloat16 的支持。它们还支持 DDR5 内存，与 DDR4 相比，内存带宽增加了 50%。与 Amazon Graviton3 处理器相比，Amazon Graviton3E 处理器的矢量指令性能提高了 35%。这一改进为 HPC 应用程序提供了更高的性能优势。
 
 ## 基准测试概述和测试目标
 
