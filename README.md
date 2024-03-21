@@ -1,4 +1,4 @@
-# Milvus在亚马逊云科技Graviton3提升实例性价比高达31%
+# Milvus使用Amazon Graviton3实例实现高达31%的性价比提升
 
 <picture>
  <img alt="YOUR-ALT-TEXT" src="assets/milvus_brand.png">
